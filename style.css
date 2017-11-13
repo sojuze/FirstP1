@@ -2,12 +2,12 @@
 nav,
 header,
 footer {
-    display: block;
+  display: block;
 }
 
 body {
-    line-height: 1;
-    margin: 0;
+  line-height: 1;
+  margin: 0;
 }
 
 /*########### NAV BAR ###########*/
@@ -18,7 +18,7 @@ nav {
 }
 
 nav ul {
-    background-color: #eee;
+    background-color: cornflowerblue;
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -53,11 +53,56 @@ ul.topnav li.dropdownIcon {
     display: none;
 }
 
-
-.my-page .my-content .my-container {
-  padding-left: 30px;
+.my-page {
+  background-color: beige;
 }
 
+.my-page .my-content .my-container {
+  width: 100%;
+  height: 310px;
+  padding: 10px 30px;
+  background-image: url(images/image.jpg);
+  
+}
+
+.my-page .my-content .my-container h2 {
+  color: aliceblue;
+  text-align: center;
+  padding-top: 65px;
+}
+
+.my-page .my-content .informations p {
+  padding-top: 17px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.my-page .my-content .galery{
+  list-style: none;
+}
+
+.my-page .my-content .galery li {
+  width: 95%;
+  margin: 10px 2.5% 0 2.5%;
+  list-style-type: none;
+}
+
+.my-page footer .bottom{
+  background-color: cornflowerblue;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 80%;
+  margin: 0 auto;
+  
+}
+
+.my-page footer .bottom p{
+  text-align: center;
+
+}
 
 /*######## MOBILE ############*/
 @media screen and (max-width: 680px) {
