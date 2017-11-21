@@ -1,79 +1,45 @@
 /*########### DEFAULTS ###########*/
-nav,
-header,
-footer {
-  display: block;
-}
 
 body {
   line-height: 1;
-  margin: 0;
+  margin: 0 auto;
 }
 
 /*########### NAV BAR ###########*/
 
-nav {
-    width: 100%;
-    margin: 0;
-}
-
-nav ul {
-    background-color: cornflowerblue;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-}
-
-ul.topnav li {
-    list-style: none;
-    float: left;
-}
-
-ul.topnav li.topnav-right{
-    float: right;
+.navbar {
+  background-color: black;
 }
 
 
-ul.topnav li a{
-    display: block;
-    text-decoration: none;
-    min-height: 16px;
-    text-align: center;
-    padding: 14px;
-    text-transform: uppercase;
-    color: #666;
-}
+/*########### MAIN CONTENT ##################*/
 
-ul.topnav li a:hover {
-    background-color: #0080ff;
-    color: #fff;
-}
 
-ul.topnav li.dropdownIcon {
-    display: none;
-}
-
-.my-page {
-  background-color: beige;
-}
 
 .my-page .my-content .my-container {
   width: 100%;
-  height: 310px;
+  height: 217px;
   padding: 10px 30px;
-  background-image: url(images/image.jpg);
+  background-image: url(images/background.gif);
   
 }
 
-.my-page .my-content .my-container h2 {
+.my-page .my-content .my-container p{
   color: aliceblue;
   text-align: center;
+  font-weight: 550;
   padding-top: 65px;
 }
 
-.my-page .my-content .informations p {
+.my-page .my-content .informations .row p {
   padding-top: 17px;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  font-size: 1.3em;
+  border: 2px solid black;
 }
+
+/*border added just to see how the grid behave in diferent situations*/
 
 img {
   max-width: 100%;
@@ -89,50 +55,8 @@ img {
   list-style-type: none;
 }
 
-.my-page footer .bottom{
-  background-color: cornflowerblue;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  width: 80%;
-  margin: 0 auto;
-  
+.jumbotron {
+  padding-top: 25px;
 }
 
-.my-page footer .bottom p{
-  text-align: center;
 
-}
-
-/*######## MOBILE ############*/
-@media screen and (max-width: 680px) {
-    ul.topnav li:not(:nth-child(1)) {
-        display: none;
-    }
-    ul.topnav li.dropdownIcon {
-        display: block;
-        float: right;
-    } 
-    
-    ul.topnav.responsive li.dropdownIcon {
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-    
-    ul.topnav.responsive {
-        position: relative;
-    }
-    
-    
-    ul.topnav.responsive li {
-        display: inline;
-        float: none;
-    }
-    
-    ul.topnav.responsive li a{
-        display: block;
-        text-align: left;
-        
-    }
-}
